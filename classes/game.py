@@ -1,6 +1,5 @@
 import random
 
-
 class Bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -13,16 +12,15 @@ class Bcolors:
 
 
 class Person:
-    def __init__(self, hp, mp, atk, df, magic):
+    def __init__(self, hp, mp, atk, magic):
         self.maxhp = hp
         self.hp = hp
         self.maxmp = mp
         self.mp = mp
         self.atkl = atk - 10
         self.atkh = atk + 10
-        self.df = df
         self.magic = magic
-        self.actions = ["Attack", "Magic", "Defend"]
+        self.actions = ["Attack", "Magic"]
 
     def generate_damage(self):
         return random.randrange(self.atkl, self.atkh)
@@ -72,12 +70,3 @@ class Person:
         for spell in self.magic:
             print(str(i) + ":", spell["name"], "(cost:", str(spell["cost"]) + ")")
             i += 1
-
-    def defending_stance(self, dmg):
-        print(Bcolors.OKBLUE + "Defending" + Bcolors.ENDC)
-        if dmg > 20:
-            dmg = 20
-        self.hp -= dmg
-        if self.hp < 0:
-            self.hp = 0
-        return self.hp
