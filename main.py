@@ -51,7 +51,7 @@ while running:
     if index == 0:
         dmg = player.generate_damage()
         enemy.take_damage(dmg)
-        print("You attacked for " + str(dmg), "points of damage.")
+        print("\n" + "~~~~~You attacked for " + Bcolors.OKBLUE + str(dmg) + Bcolors.ENDC, "points of damage.")
     elif index == 1:
         player.choose_magic()
         magic_choice = int(input("Choose a Spell: ")) - 1
@@ -68,11 +68,11 @@ while running:
 
         if spell.type == "white":
             player.heal(magic_dmg)
-            print(Bcolors.OKBLUE + "\n" + spell.name + " heals for", str(magic_dmg), "HP." + Bcolors.ENDC)
+            print("\n" + "~~~~~" + spell.name + " healed for", Bcolors.OKGREEN + str(magic_dmg), Bcolors.ENDC + "HP.")
 
         elif spell.type == "black":
             enemy.take_damage(magic_dmg)
-            print(Bcolors.OKBLUE + "\n" + spell.name + " deals", str(magic_dmg), "points of damage." + Bcolors.ENDC)
+            print("\n" + "~~~~~" + spell.name + " deals", Bcolors.OKBLUE + str(magic_dmg), Bcolors.ENDC + "damage.")
 
     elif index == 2:
         player.choose_item()
@@ -85,7 +85,7 @@ while running:
 
     enemy_dmg = enemy.generate_damage()
     player.take_damage(enemy_dmg)
-    print("Enemy attacks for", str(enemy_dmg))
+    print("~~~~~Enemy attacks for", Bcolors.FAIL + str(enemy_dmg) + Bcolors.ENDC + " damage.")
 
     print("----------------")
     print("Enemy HP:", Bcolors.FAIL + str(enemy.get_hp()) + "/" + str(enemy.get_maxhp()) + Bcolors.ENDC, "\n")

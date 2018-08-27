@@ -57,21 +57,21 @@ class Person:
         i = 1
         print(Bcolors.OKBLUE + "ACTIONS" + Bcolors.ENDC)
         for item in self.actions:
-            print(str(i) + ".", item)
+            print("    " + str(i) + ".", item)
             i += 1
 
     def choose_magic(self):
         i = 1
-        print(Bcolors.OKBLUE + "MAGIC" + Bcolors.ENDC)
+        print("\n" + Bcolors.OKBLUE + "MAGIC" + Bcolors.ENDC)
         for spell in self.magic:
-            print(str(i) + ".", spell.name, "(cost:", str(spell.cost) + ")")
+            print("    " + str(i) + ".", spell.name, "(cost:", str(spell.cost) + ")")
             i += 1
 
     def choose_item(self):
         i = 1
 
-        print(Bcolors.OKGREEN + "ITEMS" + Bcolors.ENDC)
+        print("\n" + Bcolors.OKGREEN + "ITEMS" + Bcolors.ENDC)
         for item in self.items:
-            print(str(i) + ".", item.name, ":", item.desctiption, " (x5)")
+            print("    " + str(i) + ".", item.name, ":", item.desctiption, " (x5)")
             i += 1
 
