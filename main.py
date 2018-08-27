@@ -56,6 +56,9 @@ while running:
         player.choose_magic()
         magic_choice = int(input("Choose a Spell: ")) - 1
 
+        if magic_choice == -1:
+            continue
+
         spell = player.magic[magic_choice]
         magic_dmg = spell.generate_dmg()
 
@@ -77,8 +80,15 @@ while running:
     elif index == 2:
         player.choose_item()
         item_choice = int(input("Choose Item: ")) - 1
-#need purpose
-        continue
+
+        if item_choice == -1:
+            continue
+
+        item = player.items[item_choice]
+
+        if item.type == "potion":
+            player.heal(item.prop)
+            print("\n" + "~~~~~" + item.name + " healed for", Bcolors.OKGREEN + str(item.prop), Bcolors.ENDC + "HP.")
 
 
     enemy_choice = 1
