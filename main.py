@@ -3,6 +3,8 @@ from classes.magic import Spell
 from classes.inventory import Item
 import random
 
+
+
 # Create Black Magic
 fire = Spell("Fire", 10, 500, "black")
 thunder = Spell("Thunder", 10, 500, "black")
@@ -50,13 +52,13 @@ while starting == 1:
 
 # Instantiate People
 player1 = Person(playerName, 3260, 171, 65, 34, player_spells, player_items)
-player2 = Person("Lulu      ", 2160, 35, 110, 34, player_spells, player_items)
-player3 = Person("Cait Sith ", 5150, 105, 35, 34, player_spells, player_items)
+player2 = Person("Braska    ", 2160, 35, 110, 34, player_spells, player_items)
+player3 = Person("Jecht     ", 5150, 105, 35, 34, player_spells, player_items)
 
 
-enemy1 = Person("Imp    ", 1200, 130, 560, 320, enemy_spells, [])
-enemy2 = Person("Seymour", 11200, 240, 150, 25, enemy_spells, [])
-enemy3 = Person("Imp    ", 1200, 130, 560, 320, enemy_spells, [])
+enemy1 = Person("Yuna   ", 1200, 130, 560, 320, enemy_spells, [])
+enemy2 = Person("Zucav  ", 11200, 240, 150, 25, enemy_spells, [])
+enemy3 = Person("Rikku  ", 1200, 130, 560, 320, enemy_spells, [])
 
 
 players = [player1, player2, player3]
@@ -67,15 +69,11 @@ i = 0
 
 while running:
     print("\n")
-    print(bcolors.BOLD + bcolors.UNDERLINE + "NAME:                   |HP:         "
-                                             "                           |MP:        "
-          + bcolors.ENDC)
+    print("NAME:                   |HP:                                    |MP:        ")
 
     for player in players:
         player.get_stats()
-    print(bcolors.BOLD + bcolors.UNDERLINE + "                                      "
-                                             "                                      "
-          + bcolors.ENDC)
+    print("\n")
     for enemy in enemies:
         enemy.get_enemy_stats()
 
@@ -84,7 +82,7 @@ while running:
 # ACTIONS MENU
     for player in players:
         player.choose_action()
-        choice = input(bcolors.BOLD + "-Choose an Action: " + bcolors.ENDC)
+        choice = input("-Choose an Action: ")
         index = int(choice) - 1
 
         if index == 0:
@@ -105,7 +103,7 @@ while running:
     # MAGIC MENU
         elif index == 1:
             player.choose_magic()
-            magic_choice = int(input(bcolors.BOLD + "-Choose a Spell: " + bcolors.ENDC)) - 1
+            magic_choice = int(input("-Choose a Spell: ")) - 1
 
             if magic_choice == -1:
                 continue
@@ -137,14 +135,14 @@ while running:
                       + bcolors.ENDC + "\n")
 
                 if enemies[enemy].get_hp() == 0:
-                    print(bcolors.FAIL + "====" +enemies[enemy].name.replace(" ", "") + " has died." + bcolors.ENDC)
+                    print(bcolors.FAIL + "====" + enemies[enemy].name.replace(" ", "") + " has died." + bcolors.ENDC)
                     del enemies[enemy]
 
 
     # ITEMS MENU
         elif index == 2:
             player.choose_item()
-            item_choice = int(input(bcolors.BOLD + "-Choose an Item: " + bcolors.ENDC)) - 1
+            item_choice = int(input("-Choose an Item: ")) - 1
 
             if item_choice == -1:
                 continue
@@ -220,6 +218,7 @@ while running:
         if enemy_choice == 0:
             # Chose Attack
             target = random.randrange(0, 3)
+
             enemy_dmg = enemies[0].generate_damage()
 
             players[target].take_damage(enemy_dmg)
@@ -229,11 +228,16 @@ while running:
             print(bcolors.FAIL + "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="
                   + bcolors.ENDC)
 
+            if players[target].get_hp() == 0:
+                print(bcolors.FAIL + "====" + players[target].name.replace(" ", "") + " has died." + bcolors.ENDC)
+                del players[target]
+
         elif enemy_choice == 1:
             spell, magic_dmg = enemy.choose_enemy_spell()
             enemy.reduce_mp(spell.cost)
+            hp_pct = enemy.hp / enemy.maxhp * 100
 
-            if spell.type == "white":
+            if spell.type == "white" and hp_pct < 50:
                 enemy.heal(magic_dmg)
                 print("~~~~~", enemy.name.replace(" ", "") + "'s " + spell.name + " heals",
                       bcolors.OKGREEN + str(magic_dmg), bcolors.ENDC + "HP.")
@@ -251,9 +255,10 @@ while running:
 
                 if players[target].get_hp() == 0:
                     print(bcolors.FAIL + "====" + players[target].name.replace(" ", "") + " has died." + bcolors.ENDC)
-                    del players[player]
+                    del players[target]
 
-
+            else:
+                enemy_choice = random.randrange(0, 2)
 
 
 

@@ -1,12 +1,15 @@
 import random
 from classes.inventory import Item
+from colorama import init, Fore, Back, Style
+init()
+
 
 class bcolors:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
-    OKGREEN = '\033[92m'
-    WARNING = '\033[93m'
-    FAIL = '\033[91m'
+    HEADER = '\033[96m'
+    OKBLUE = '\033[34m'
+    OKGREEN = '\033[32m'
+    WARNING = '\033[33m'
+    FAIL = '\033[31m'
     ENDC = '\033[0m'
     BOLD = "\033[1m"
     UNDERLINE = "\033[4m"
@@ -57,7 +60,7 @@ class Person:
 
     def choose_action(self):
         i = 1
-        print("\n" + bcolors.BOLD + bcolors.OKBLUE + self.name + bcolors.ENDC)
+        print("\n" + "   +" + bcolors.HEADER + self.name.replace(" ", "") + bcolors.ENDC + "+")
         print(bcolors.UNDERLINE + "═══ACTIONS═══" + bcolors.ENDC)
         for item in self.actions:
             print("    " + str(i) + ".", item)
@@ -85,7 +88,7 @@ class Person:
             if enemy.hp != 0:
                 print("        " + str(i) + ".", enemy.name)
                 i += 1
-        choice = int(input(bcolors.BOLD + "-Choose a Target: " + bcolors.ENDC)) -1
+        choice = int(input("-Choose a Target: ")) -1
         return choice
 
 
@@ -94,7 +97,7 @@ class Person:
         bar_ticks = (self.hp / self.maxhp) * 100 / 2
 
         while bar_ticks > 0:
-            hp_bar += "/"
+            hp_bar += "█"
             bar_ticks -= 1
 
         while len(hp_bar) < 50:
@@ -113,9 +116,8 @@ class Person:
             current_hp += hp_string
         else:
             current_hp = hp_string
-
-        print(bcolors.BOLD + self.name + " " +
-                current_hp + "  |" + bcolors.FAIL + hp_bar + bcolors.ENDC + "|")
+        print("___________________________________________________________________________")
+        print(bcolors.BOLD + self.name + " " + current_hp + "  |" + bcolors.FAIL + hp_bar + bcolors.ENDC + "|")
 
 
     def get_stats(self):
@@ -126,14 +128,14 @@ class Person:
         mp_ticks = (self.mp / self.maxmp) * 100 / 10
 
         while hp_ticks > 0:
-            hp_bar += "/"
+            hp_bar += "█"
             hp_ticks -= 1
 
         while len(hp_bar) < 25:
             hp_bar += " "
 
         while mp_ticks > 0:
-            mp_bar += "/"
+            mp_bar += "█"
             mp_ticks -= 1
 
         while len(mp_bar) < 10:
@@ -167,6 +169,7 @@ class Person:
         else:
             current_mp = mp_string
 
+        print("____________________________________________________________________________")
         print(bcolors.BOLD + self.name + "   " +
               current_hp + "  |" + bcolors.OKGREEN + hp_bar + bcolors.ENDC +
               "| " + current_mp + "  |" + bcolors.OKBLUE + mp_bar + bcolors.ENDC + "|")
@@ -176,9 +179,9 @@ class Person:
         spell = self.magic[magic_choice]
         magic_dmg = spell.generate_dmg()
 
-        pct = self.hp / self.maxhp * 100
+       # pct = self.hp / self.maxhp * 100
 
-        if self.mp < spell.cost or spell.type == "white" and pct > 50:
+        if self.mp < spell.cost: #or spell.type == "white" and pct > 50:
             self.choose_enemy_spell()
         else:
             return spell, magic_dmg
