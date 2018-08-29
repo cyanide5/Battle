@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="94fb33a7-d98f-4537-ac1c-f02d580e0f25" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,12 +38,12 @@
         <counts>
           <entry key="Python Console" value="3" />
           <entry key="py" value="15248" />
-          <entry key="txt" value="342" />
+          <entry key="txt" value="447" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="342" />
+          <entry key="PLAIN_TEXT" value="447" />
           <entry key="Python" value="15251" />
         </counts>
       </usages-collector>
@@ -52,10 +51,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="1156">
               <caret line="68" column="27" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="27" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -69,20 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/colorama/ansi.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="602">
-              <caret line="77" column="23" lean-forward="true" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="976">
-              <caret line="108" column="24" selection-start-line="108" selection-start-column="16" selection-end-line="108" selection-end-column="24" />
+            <state relative-caret-position="612">
+              <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -142,8 +132,8 @@
         <option value="$PROJECT_DIR$/classes/inventory.py" />
         <option value="$PROJECT_DIR$/classes/magic.py" />
         <option value="$PROJECT_DIR$/venv/Lib/site-packages/colorama/ansi.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/classes/game.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -396,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535523234567</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="imported colorama &amp; tweeked visual effects to be compatable with windows">
+      <created>1535583920830</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1535583920830</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -412,18 +409,18 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26652452" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26652452" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection Results" weight="0.329718" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.24403471" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.24403471" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.28199565" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.20173536" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.54338396" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.30043384" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.329718" />
@@ -494,7 +491,8 @@
     <MESSAGE value="set inventory quantities" />
     <MESSAGE value="updated multiple enemies &#10;fixed issue with healh bars in darcula themes&#10;enabled custom player names&#10;resolved end game errors" />
     <MESSAGE value="added enemy ai &#10;(may cause bug when enemy attempts to heal when hp &gt; 50 percent)" />
-    <option name="LAST_COMMIT_MESSAGE" value="added enemy ai &#10;(may cause bug when enemy attempts to heal when hp &gt; 50 percent)" />
+    <MESSAGE value="imported colorama &amp; tweeked visual effects to be compatable with windows" />
+    <option name="LAST_COMMIT_MESSAGE" value="imported colorama &amp; tweeked visual effects to be compatable with windows" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/classes/__init__.py">
@@ -541,16 +539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="976">
-          <caret line="108" column="24" selection-start-line="108" selection-start-column="16" selection-end-line="108" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/colorama/ansi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="602">
@@ -560,7 +548,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="1156">
           <caret line="68" column="27" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="27" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
@@ -569,6 +557,16 @@
             <marker date="1535583774002" expanded="true" signature="797:892" ph="..." />
             <marker date="1535583774002" expanded="true" signature="2173:2500" ph="..." />
             <marker date="1535583774002" expanded="true" signature="2526:3306" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>

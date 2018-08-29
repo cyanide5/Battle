@@ -34,7 +34,7 @@ player_items = [{"item": potion, "quantity": 15}, {"item": hipotion, "quantity":
 
 
 print("=============")
-print(bcolors.FAIL + bcolors.BOLD + "IT'S A GAME!!" + bcolors.ENDC)
+print(bcolors.FAIL + "IT'S A GAME!!" + bcolors.ENDC)
 print("=============")
 
 playerName = ""
