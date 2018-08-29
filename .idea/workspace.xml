@@ -4,6 +4,7 @@
     <list default="true" id="94fb33a7-d98f-4537-ac1c-f02d580e0f25" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/inventory.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/inventory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,14 +38,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="12884" />
-          <entry key="txt" value="93" />
+          <entry key="py" value="14322" />
+          <entry key="txt" value="240" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="93" />
-          <entry key="Python" value="12884" />
+          <entry key="PLAIN_TEXT" value="240" />
+          <entry key="Python" value="14322" />
         </counts>
       </usages-collector>
     </session>
@@ -54,15 +55,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="85" column="17" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
+            <state relative-caret-position="432">
+              <caret line="182" column="13" lean-forward="true" selection-start-line="182" selection-start-column="13" selection-end-line="182" selection-end-column="13" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <marker date="1535509869617" expanded="true" signature="268:273" ph="..." />
-                <marker date="1535509869617" expanded="true" signature="632:638" ph="..." />
-                <marker date="1535509869617" expanded="true" signature="744:839" ph="..." />
-                <marker date="1535509869617" expanded="true" signature="2103:2460" ph="..." />
-                <marker date="1535509869617" expanded="true" signature="2486:3190" ph="..." />
+                <marker date="1535523021805" expanded="true" signature="268:273" ph="..." />
+                <marker date="1535523021805" expanded="true" signature="632:638" ph="..." />
+                <marker date="1535523021805" expanded="true" signature="744:839" ph="..." />
+                <marker date="1535523021805" expanded="true" signature="2103:2460" ph="..." />
+                <marker date="1535523021805" expanded="true" signature="2486:3190" ph="..." />
               </folding>
             </state>
           </provider>
@@ -71,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="118" column="24" lean-forward="true" selection-start-line="118" selection-start-column="24" selection-end-line="118" selection-end-column="24" />
+            <state relative-caret-position="384">
+              <caret line="237" column="64" lean-forward="true" selection-start-line="237" selection-start-column="64" selection-end-line="237" selection-end-column="64" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -83,10 +84,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/inventory.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="119">
+              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
               <folding>
-                <marker date="1535334109084" expanded="true" signature="13:18" ph="..." />
+                <marker date="1535516589072" expanded="true" signature="13:18" ph="..." />
               </folding>
             </state>
           </provider>
@@ -95,10 +96,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/magic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+            <state relative-caret-position="221">
+              <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
               <folding>
-                <marker date="1535331170968" expanded="true" signature="29:34" ph="..." />
+                <marker date="1535516446478" expanded="true" signature="29:34" ph="..." />
               </folding>
             </state>
           </provider>
@@ -129,8 +130,8 @@
       <list>
         <option value="$PROJECT_DIR$/classes/__init__.py" />
         <option value="$PROJECT_DIR$/classes/test.py" />
-        <option value="$PROJECT_DIR$/classes/magic.py" />
         <option value="$PROJECT_DIR$/classes/inventory.py" />
+        <option value="$PROJECT_DIR$/classes/magic.py" />
         <option value="$PROJECT_DIR$/classes/game.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
@@ -288,8 +289,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.magic" />
-        <item itemvalue="Python.inventory" />
         <item itemvalue="Python.game" />
+        <item itemvalue="Python.inventory" />
       </list>
     </recent_temporary>
   </component>
@@ -360,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535481937086</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="updated multiple enemies &#10;fixed issue with healh bars in darcula themes&#10;enabled custom player names&#10;resolved end game errors">
+      <created>1535510667143</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1535510667143</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -376,17 +384,17 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26652452" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26652452" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.37093276" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.10845987" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.329718" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.28199565" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.18329719" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.37852496" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.329718" />
@@ -402,12 +410,12 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.49457702" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.3177874" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.329718" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.28199565" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.18329719" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.37852496" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.329718" />
@@ -454,7 +462,8 @@
     <MESSAGE value="added inventory" />
     <MESSAGE value="inventory update (potions)" />
     <MESSAGE value="set inventory quantities" />
-    <option name="LAST_COMMIT_MESSAGE" value="set inventory quantities" />
+    <MESSAGE value="updated multiple enemies &#10;fixed issue with healh bars in darcula themes&#10;enabled custom player names&#10;resolved end game errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated multiple enemies &#10;fixed issue with healh bars in darcula themes&#10;enabled custom player names&#10;resolved end game errors" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/classes/__init__.py">
@@ -464,45 +473,45 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/magic.py">
+    <entry file="file://$PROJECT_DIR$/classes/inventory.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        <state relative-caret-position="119">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
           <folding>
-            <marker date="1535331170968" expanded="true" signature="29:34" ph="..." />
+            <marker date="1535516589072" expanded="true" signature="13:18" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/inventory.py">
+    <entry file="file://$PROJECT_DIR$/classes/magic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="221">
+          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
           <folding>
-            <marker date="1535334109084" expanded="true" signature="13:18" ph="..." />
+            <marker date="1535516446478" expanded="true" signature="29:34" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="85" column="17" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
+        <state relative-caret-position="432">
+          <caret line="182" column="13" lean-forward="true" selection-start-line="182" selection-start-column="13" selection-end-line="182" selection-end-column="13" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1535509869617" expanded="true" signature="268:273" ph="..." />
-            <marker date="1535509869617" expanded="true" signature="632:638" ph="..." />
-            <marker date="1535509869617" expanded="true" signature="744:839" ph="..." />
-            <marker date="1535509869617" expanded="true" signature="2103:2460" ph="..." />
-            <marker date="1535509869617" expanded="true" signature="2486:3190" ph="..." />
+            <marker date="1535523021805" expanded="true" signature="268:273" ph="..." />
+            <marker date="1535523021805" expanded="true" signature="632:638" ph="..." />
+            <marker date="1535523021805" expanded="true" signature="744:839" ph="..." />
+            <marker date="1535523021805" expanded="true" signature="2103:2460" ph="..." />
+            <marker date="1535523021805" expanded="true" signature="2486:3190" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="118" column="24" lean-forward="true" selection-start-line="118" selection-start-column="24" selection-end-line="118" selection-end-column="24" />
+        <state relative-caret-position="384">
+          <caret line="237" column="64" lean-forward="true" selection-start-line="237" selection-start-column="64" selection-end-line="237" selection-end-column="64" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>

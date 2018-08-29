@@ -74,7 +74,7 @@ class Person:
         i = 1
         print("\n" + bcolors.UNDERLINE + "═══ITEMS═══" + bcolors.ENDC)
         for item in self.items:
-            print("    " + str(i) + ".", item["item"].name + ":", item["item"].desctiption,
+            print("    " + str(i) + ".", item["item"].name + ":", item["item"].description,
                   " (x" + str(item["quantity"]) + ")")
             i += 1
 
@@ -170,3 +170,15 @@ class Person:
         print(bcolors.BOLD + self.name + "   " +
               current_hp + "  |" + bcolors.OKGREEN + hp_bar + bcolors.ENDC +
               "| " + current_mp + "  |" + bcolors.OKBLUE + mp_bar + bcolors.ENDC + "|")
+
+    def choose_enemy_spell(self):
+        magic_choice = random.randrange(0, len(self.magic))
+        spell = self.magic[magic_choice]
+        magic_dmg = spell.generate_dmg()
+
+        pct = self.hp / self.maxhp * 100
+
+        if self.mp < spell.cost or spell.type == "white" and pct > 50:
+            self.choose_enemy_spell()
+        else:
+            return spell, magic_dmg
